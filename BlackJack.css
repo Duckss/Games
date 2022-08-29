@@ -1,0 +1,189 @@
+body {
+    max-width: 800px;
+    margin: auto;
+    background-image: url("Images/Body.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*===========================Character parent container FOR BUBBLE AND DEALER======================================*/
+
+.Character {
+    border: solid;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+/*==============Dealer picture==============================================*/
+.Owner {
+    background-image: url("Images/Dealer.jpg");
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: a;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+@keyframes a {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/*==============Image========================================*/
+
+.ImageAnimation {
+    animation: b;
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.Image {
+    /*THIS*/
+    height: 200px;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    bottom: 50%;
+    left: 55%;
+}
+
+.ImageText {
+    font-size: large;
+    position: absolute;
+    color: white;
+
+    bottom: 80%;
+    left: 66%;
+}
+
+@keyframes b {
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*@media all and (max-width: 650px) {
+    .Image {
+        height: 200px;
+        background-repeat: repeat;
+        border: solid;
+        position: absolute;
+        bottom: 300px;
+        left: 300px;
+        animation: b;
+        opacity: 1;
+        animation-delay: 2;
+    }
+}
+
+
+/*===========================Container=========================================*/
+
+.Contain {
+    margin: 20px;
+    border: solid;
+    background-image: url("Images/BlackJack.jpg");
+}
+
+/*====================================Title Card===============================================*/
+
+.TitleCard {
+    color: purple;
+    text-align: center;
+    font-size: 30px;
+    display: none;
+}
+
+/*======================================The Cards=================================================*/
+
+.TheCards {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    display: none;
+}
+
+/*=======================================The Result=========================================================*/
+.TheResult {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    display: none;
+}
+
+/*==============================================The CardDeck===============================================================*/
+
+.CardDeck {
+    height: 75px;
+    width: 50px;
+    border: solid;
+    display: none;
+    margin-top: 30px;
+    margin-left: 20px;
+    background-image: url("Images/Deck.jpg");
+    background-repeat: no-repeat;
+}
+
+/*===================================================The Status===============================================================*/
+
+.TheEnd {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    display: none;
+}
+
+/*===================================================For Button(CONTAINER) w/ buttons inside==========================================================================*/
+
+.ForButton {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    border: solid;
+}
+
+.TheButton {
+    margin: 10px;
+    color: green;
+}
+/*===================================================For Intro======================================================*/
+
+.Intro {
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+}
+/*==================================STARTING GAME==================================================================================*/
+
+.NewButton {
+    display: none;
+    color: brown;
+    border: solid;
+}
+
+.CardDeck {
+    background-image: url("Images/Deck.jpg");
+}
+
+/*========================================CARDS===================================================================*/
+
+.Card1 {
+}
+
+.Card2 {
+    position: relative;
+    left: 30px;
+}
